@@ -91,7 +91,7 @@ log do worker OrderPrepare
 log do worker OrderReady  
 ![img_8.png](img_8.png)
 
-log do worker OrderSentToCustomer![img_2.png](img_2.png)  
+log do worker OrderSentToCustomer    
 ![img_9.png](img_9.png)
 
 e o microserviço de logs reage a todos os eventos que foram mandados para as rounting keys
