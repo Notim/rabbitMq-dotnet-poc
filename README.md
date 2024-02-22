@@ -35,16 +35,13 @@ Estes são os conceitos fundamentais do RabbitMQ para criar sistemas de mensager
 
 o sistema emite um evento de criação de pedido quando o cliente fizer uma compra
 
-existem dois microserviços que vão reagir a esse evento de criação, um é o de processamento de requeisição do pedido, o outro é um sistema que loga todas as mensagens trafegadas pelos sistemas
+existem dois microserviços que vão reagir a esse evento de criação, um é o de processamento de solicitação do pedido, o outro é um sistema que loga todas as mensagens trafegadas pelos sistemas
 
-pra isso vai ser usado uma exchange chamada "ordering" que vai ser onde vai ficar centralizada as mensagens relacionadas ao serviço de ordering
-e terão duas filas, uma chamada order-logs e outra chamada order-requested
+pra isso vai ser usado uma exchange chamada "ordering" que vai ser onde vai ficar centralizada as mensagens relacionadas ao serviço de ordering e terão 5 filas.
 
-logo após a criação do pedido o microserviço de OrderRequested vai emitir um evento de OrderPrepare que seria um comando para o pedido chegar para a acozinha
-na cozinha o pedido vai ser preparado e vai ser enviado um comando de pedido finalizado (Order Ready) e por fim um microserviço de orderSentToCustomer vai reagir a esse evento de order ready e finalizar o fluxo.
+logo após a criação do pedido o microserviço de solicitação do pedido (OrderRequested) vai emitir um evento de preparação do pedido (OrderPrepare) que seria um comando para o pedido chegar na cozinha, após isso o pedido vai ser preparado e vai ser enviado um comando de pedido finalizado (Order Ready) e por fim um microserviço de finalização (OrderSentToCustomer) vai reagir ao evento e finalizar o fluxo.
 
 todos os eventos vão ser logados no microserviço de logs
-
 
 pra isso vamos criar:
 
@@ -65,16 +62,15 @@ routing-keys:
 
 a fila `order-logs` vai receber mensagens de todos os routing keys.
 
-o arquivo que vai conter todas essas informações de quais exchanges, topicos e bindings que vão ser criados está no arquivo rabbitmq-definitions.conf e está sendo passado para o container docker atrsaves do docker compose
-
+o arquivo que vai conter todas essas informações de quais exchanges, topicos e bindings que vão ser criados está no arquivo `rabbitmq-definitions.conf` e está sendo passado para o container docker atraves do `docker-compose.yaml`
 
 # esrtutura da aplicação
-Cada microserviço vai ser criado um worker background service que vai ficar escutando as filas.
 a porta de entrada que o cliente vai solicitar vai ser um serviço WebApi 
+Cada microserviço que vai reagir as mensagens do rabbitMq vai ser criado um worker background service que vai ficar escutando as filas.
 
 ![img_1.png](img_1.png)
 
-A aplicação de WebApi vai emitir a mensagem de OrderRequest no exchange e la a exchange vai direcionar a mensagem para a fila correta baseado no que foi definido no routingkey
+A aplicação de WebApi vai emitir a mensagem de OrderRequest no exchange e a exchange vai direcionar a mensagem para a fila correta baseado no que foi definido no routingkey
 
 # Testes de funcionamento
 
@@ -104,4 +100,11 @@ e o microserviço de logs reage a todos os eventos que foram mandados para as ro
 logs do worker OrderLogs
 ![img_10.png](img_10.png)
 
-a aplicação não está seguindo melhores praticas de desenvolvimento pois foi idealizado para ser uma POC de utilização do RabbitMQ
+
+# conclusão
+o RabbitMq é um excelente provedor de AMQP para projetos de larga escala, podendo facilmente ser configurado e utilizado em integrações de sistemas de microserviços. voce pode criar um sistema baseado em Saga com rabbitMq e fazer IntegrationEvents do DDD com ele tbm, alem de conseguir tornar os sistemas event driven.
+
+# contras
+paralelismo entre os consumidores para consumir mensagens da mesma fila, me parece ser mais complexo por questões de ordenação das mensagens que o rabbitmq faz, tornando uma ferramente não tão eficaz para tratar de gargalos com escala horizontal.
+
+obs: a aplicação não está seguindo melhores praticas de desenvolvimento pois foi idealizado para ser uma POC de utilização do RabbitMQ
