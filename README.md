@@ -30,7 +30,6 @@ Resumindo o processo:
 
 Estes são os conceitos fundamentais do RabbitMQ para criar sistemas de mensageria robustos e flexíveis.
 
-
 # Caso de uso com pedidos
 
 o sistema emite um evento de criação de pedido quando o cliente fizer uma compra
@@ -74,30 +73,30 @@ A aplicação de WebApi vai emitir a mensagem de OrderRequest no exchange e a ex
 
 # Testes de funcionamento
 
-colocar todos os microserviços para rodar
+colocar todos os microserviços para rodar  
 ![img_5.png](img_5.png)
 
-requisição para o webapi
+requisição para o webapi  
 ![img_3.png](img_3.png)
 
-log da webApi
+log da webApi  
 ![img_4.png](img_4.png)
 
-log do worker OrderRequested
+log do worker OrderRequested  
 ![img_6.png](img_6.png)
 
-log do worker OrderPrepare
+log do worker OrderPrepare  
 ![img_7.png](img_7.png)
 
-log do worker OrderReady
+log do worker OrderReady  
 ![img_8.png](img_8.png)
 
-log do worker OrderSentToCustomer![img_2.png](img_2.png)
+log do worker OrderSentToCustomer![img_2.png](img_2.png)  
 ![img_9.png](img_9.png)
 
 e o microserviço de logs reage a todos os eventos que foram mandados para as rounting keys
 
-logs do worker OrderLogs
+logs do worker OrderLogs  
 ![img_10.png](img_10.png)
 
 
