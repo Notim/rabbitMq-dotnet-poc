@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/CompanyName.Ordering.Checkout.OrderReady.Worker.props" />
+</Project>

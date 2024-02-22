@@ -1,0 +1,12 @@
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/bin/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.deps.json
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/bin/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/bin/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.pdb
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.csproj.AssemblyReference.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.AssemblyInfoInputs.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.AssemblyInfo.cs
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.csproj.CoreCompileInputs.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/Debug/net7.0/refint/CompanyName.Ordering.Checkout.Infrastructure.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.pdb
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/Debug/net7.0/ref/CompanyName.Ordering.Checkout.Infrastructure.dll

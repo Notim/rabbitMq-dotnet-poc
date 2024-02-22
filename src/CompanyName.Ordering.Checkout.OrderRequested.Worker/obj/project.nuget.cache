@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "AYjTxlU/P3zAeDLbCvWWoDZyyHo30J5fdLwhKVVs0GGoUrfx4cXboSiXLydm4ENXtRHQXhoeaXBCLbqaI2NTOA==",
+  "success": true,
+  "projectFilePath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.OrderRequested.Worker/CompanyName.Ordering.Checkout.OrderRequested.Worker.csproj",
+  "expectedPackageFiles": [
+    "/home/joaovitorpaulinomartins/.nuget/packages/rabbitmq.client/6.8.1/rabbitmq.client.6.8.1.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,107 @@
+# Conceitos do RabbitMQ
+
+## Exchange:
+- No RabbitMQ, as mensagens são publicadas em trocas (exchanges). Uma troca é responsável por receber mensagens dos produtores e roteá-las para filas.
+- Existem vários tipos de trocas, cada uma roteia as mensagens de maneira diferente:
+    - *Direct Exchange*: Roteia mensagens com base em uma chave de roteamento exata.
+    - *Fanout Exchange*: Roteia mensagens para todas as filas vinculadas a ela.
+    - *Topic Exchange*: Roteia mensagens com base em padrões de roteamento que usam curingas (*).
+    - *Headers Exchange*: Roteia mensagens com base em cabeçalhos de mensagem em vez de rotear com base na rota.
+
+## Queue (Fila):
+- Uma fila é onde as mensagens são armazenadas até que sejam consumidas por um consumidor.
+- Os consumidores se conectam a uma fila específica para consumir as mensagens dela.
+- As filas são vinculadas a trocas para receber mensagens de lá.
+
+## Routing Key (Chave de Roteamento):
+- Uma chave de roteamento é uma chave que o produtor atribui a uma mensagem.
+- Em uma troca do tipo direct ou topic, a chave de roteamento é usada para rotear a mensagem para a(s) fila(s) correta(s).
+- No caso de uma troca do tipo fanout, a chave de roteamento é ignorada.
+
+## Binding (Vinculação):
+- Uma vinculação é uma relação entre uma troca e uma fila.
+- Estabelece um vínculo entre uma troca e uma fila, especificando a chave de roteamento usada para encaminhar as mensagens da troca para a fila.
+
+Resumindo o processo:
+- Um produtor publica uma mensagem em uma troca.
+- A troca usa a chave de roteamento (routing key) para determinar a qual fila a mensagem deve ser enviada.
+- A mensagem é então colocada na(s) fila(s) correspondente(s).
+- Um consumidor se conecta a uma fila específica e consome as mensagens dela.
+
+Estes são os conceitos fundamentais do RabbitMQ para criar sistemas de mensageria robustos e flexíveis.
+
+
+# Caso de uso com pedidos
+
+o sistema emite um evento de criação de pedido quando o cliente fizer uma compra
+
+existem dois microserviços que vão reagir a esse evento de criação, um é o de processamento de requeisição do pedido, o outro é um sistema que loga todas as mensagens trafegadas pelos sistemas
+
+pra isso vai ser usado uma exchange chamada "ordering" que vai ser onde vai ficar centralizada as mensagens relacionadas ao serviço de ordering
+e terão duas filas, uma chamada order-logs e outra chamada order-requested
+
+logo após a criação do pedido o microserviço de OrderRequested vai emitir um evento de OrderPrepare que seria um comando para o pedido chegar para a acozinha
+na cozinha o pedido vai ser preparado e vai ser enviado um comando de pedido finalizado (Order Ready) e por fim um microserviço de orderSentToCustomer vai reagir a esse evento de order ready e finalizar o fluxo.
+
+todos os eventos vão ser logados no microserviço de logs
+
+
+pra isso vamos criar:
+
+```
+exchange: ordering
+queues: 
+  order-requested 
+  order-prepare
+  order-ready
+  order-sent-to-customer
+  order-logs
+routing-keys: 
+  order-requested
+  order-prepare
+  order-ready
+  order-sent-to-customer
+```
+
+a fila `order-logs` vai receber mensagens de todos os routing keys.
+
+o arquivo que vai conter todas essas informações de quais exchanges, topicos e bindings que vão ser criados está no arquivo rabbitmq-definitions.conf e está sendo passado para o container docker atrsaves do docker compose
+
+
+# esrtutura da aplicação
+Cada microserviço vai ser criado um worker background service que vai ficar escutando as filas.
+a porta de entrada que o cliente vai solicitar vai ser um serviço WebApi 
+
+![img_1.png](img_1.png)
+
+A aplicação de WebApi vai emitir a mensagem de OrderRequest no exchange e la a exchange vai direcionar a mensagem para a fila correta baseado no que foi definido no routingkey
+
+# Testes de funcionamento
+
+colocar todos os microserviços para rodar
+![img_5.png](img_5.png)
+
+requisição para o webapi
+![img_3.png](img_3.png)
+
+log da webApi
+![img_4.png](img_4.png)
+
+log do worker OrderRequested
+![img_6.png](img_6.png)
+
+log do worker OrderPrepare
+![img_7.png](img_7.png)
+
+log do worker OrderReady
+![img_8.png](img_8.png)
+
+log do worker OrderSentToCustomer![img_2.png](img_2.png)
+![img_9.png](img_9.png)
+
+e o microserviço de logs reage a todos os eventos que foram mandados para as rounting keys
+
+logs do worker OrderLogs
+![img_10.png](img_10.png)
+
+a aplicação não está seguindo melhores praticas de desenvolvimento pois foi idealizado para ser uma POC de utilização do RabbitMQ

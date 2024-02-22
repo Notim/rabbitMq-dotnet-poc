@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "9eRxbvUonZXyPloWbLCL7wFA8kOvIIk+C8NMSMVdOZSVSD3qSh8tnPrxuIA4HhAwdr3Y4oSZaQdi6lOxWlUcPA==",
+  "success": true,
+  "projectFilePath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.WebApi/CompanyName.Ordering.Checkout.WebApi.csproj",
+  "expectedPackageFiles": [
+    "/home/joaovitorpaulinomartins/.nuget/packages/bogus/35.4.0/bogus.35.4.0.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/microsoft.aspnetcore.openapi/7.0.12/microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/rabbitmq.client/6.8.1/rabbitmq.client.6.8.1.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/home/joaovitorpaulinomartins/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

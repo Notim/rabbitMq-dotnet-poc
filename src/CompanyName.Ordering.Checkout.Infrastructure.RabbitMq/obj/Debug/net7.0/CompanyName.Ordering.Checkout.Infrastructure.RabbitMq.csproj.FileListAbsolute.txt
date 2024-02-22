@@ -1,0 +1,12 @@
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/bin/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.deps.json
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/bin/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/bin/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.pdb
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.csproj.AssemblyReference.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.GeneratedMSBuildEditorConfig.editorconfig
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.AssemblyInfoInputs.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.AssemblyInfo.cs
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.csproj.CoreCompileInputs.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/Debug/net7.0/refint/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.pdb
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/Debug/net7.0/ref/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.dll

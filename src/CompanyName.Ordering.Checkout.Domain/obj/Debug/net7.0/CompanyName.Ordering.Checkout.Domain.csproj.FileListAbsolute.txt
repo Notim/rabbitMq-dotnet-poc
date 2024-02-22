@@ -1,0 +1,12 @@
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/bin/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.deps.json
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/bin/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/bin/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.pdb
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.csproj.AssemblyReference.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.AssemblyInfoInputs.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.AssemblyInfo.cs
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.csproj.CoreCompileInputs.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/obj/Debug/net7.0/refint/CompanyName.Ordering.Checkout.Domain.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/obj/Debug/net7.0/CompanyName.Ordering.Checkout.Domain.pdb
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Domain/obj/Debug/net7.0/ref/CompanyName.Ordering.Checkout.Domain.dll

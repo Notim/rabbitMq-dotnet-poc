@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    container_name: rabbitmq-preload-conf
+    ports:
+      - "5672:5672"  # Porta para o RabbitMQ
+      - "15672:15672"  # Porta para o painel de controle do RabbitMQ (management plugin)
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq  # Volume para persistir dados do RabbitMQ
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+      - ./rabbitmq-definitions.json:/etc/rabbitmq/definitions.json:ro
+
+volumes:
+  rabbitmq_data:
+    driver: local

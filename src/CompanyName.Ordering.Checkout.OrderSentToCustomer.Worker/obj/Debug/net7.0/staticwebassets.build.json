@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tOEfEPO6U0Q75/9GD1a+wZL3cz3v53iJ6fH6hmj/hNw=",
+  "Source": "CompanyName.Ordering.Checkout.OrderSentToCustomer.Worker",
+  "BasePath": "_content/CompanyName.Ordering.Checkout.OrderSentToCustomer.Worker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

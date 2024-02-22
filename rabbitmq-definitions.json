@@ -1,0 +1,138 @@
+{
+  "users": [
+    {
+      "name": "admin",
+      "password_hash": "DRpApGZuguOz9SXhQjX/CYWXuq+l0TB9i7QcHdYF2gXap/9I",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "admin",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "exchanges": [
+    {
+      "name": "ordering",
+      "vhost": "/",
+      "type": "topic",
+      "durable": false,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  "queues": [
+    {
+      "name": "order-requested",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "order-prepare",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "order-ready",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "order-sent-to-customer",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "order-logs",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [
+    {
+      "source": "ordering",
+      "vhost": "/",
+      "destination": "order-requested",
+      "destination_type": "queue",
+      "routing_key": "order-request",
+      "arguments": {}
+    },
+    {
+      "source": "ordering",
+      "vhost": "/",
+      "destination": "order-prepare",
+      "destination_type": "queue",
+      "routing_key": "order-prepare",
+      "arguments": {}
+    },
+    {
+      "source": "ordering",
+      "vhost": "/",
+      "destination": "order-ready",
+      "destination_type": "queue",
+      "routing_key": "order-ready",
+      "arguments": {}
+    },
+    {
+      "source": "ordering",
+      "vhost": "/",
+      "destination": "order-sent-to-customer",
+      "destination_type": "queue",
+      "routing_key": "order-sent-to-customer",
+      "arguments": {}
+    },
+    {
+      "source": "ordering",
+      "vhost": "/",
+      "destination": "order-logs",
+      "destination_type": "queue",
+      "routing_key": "order-request",
+      "arguments": {}
+    },
+    {
+      "source": "ordering",
+      "vhost": "/",
+      "destination": "order-logs",
+      "destination_type": "queue",
+      "routing_key": "order-prepare",
+      "arguments": {}
+    },
+    {
+      "source": "ordering",
+      "vhost": "/",
+      "destination": "order-logs",
+      "destination_type": "queue",
+      "routing_key": "order-ready",
+      "arguments": {}
+    },
+    {
+      "source": "ordering",
+      "vhost": "/",
+      "destination": "order-logs",
+      "destination_type": "queue",
+      "routing_key": "order-sent-to-customer",
+      "arguments": {}
+    }
+  ]
+}

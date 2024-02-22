@@ -1,0 +1,195 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.WebApi/CompanyName.Ordering.Checkout.WebApi.csproj": {}
+  },
+  "projects": {
+    "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/CompanyName.Ordering.Checkout.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/CompanyName.Ordering.Checkout.Infrastructure.csproj",
+        "projectName": "CompanyName.Ordering.Checkout.Infrastructure",
+        "projectPath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/CompanyName.Ordering.Checkout.Infrastructure.csproj",
+        "packagesPath": "/home/joaovitorpaulinomartins/.nuget/packages/",
+        "outputPath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/joaovitorpaulinomartins/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.csproj",
+        "projectName": "CompanyName.Ordering.Checkout.Infrastructure.RabbitMq",
+        "projectPath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.csproj",
+        "packagesPath": "/home/joaovitorpaulinomartins/.nuget/packages/",
+        "outputPath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/joaovitorpaulinomartins/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.WebApi/CompanyName.Ordering.Checkout.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.WebApi/CompanyName.Ordering.Checkout.WebApi.csproj",
+        "projectName": "CompanyName.Ordering.Checkout.WebApi",
+        "projectPath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.WebApi/CompanyName.Ordering.Checkout.WebApi.csproj",
+        "packagesPath": "/home/joaovitorpaulinomartins/.nuget/packages/",
+        "outputPath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/joaovitorpaulinomartins/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/CompanyName.Ordering.Checkout.Infrastructure.csproj": {
+                "projectPath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/CompanyName.Ordering.Checkout.Infrastructure/CompanyName.Ordering.Checkout.Infrastructure.csproj"
+              },
+              "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.csproj": {
+                "projectPath": "/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq/CompanyName.Ordering.Checkout.Infrastructure.RabbitMq.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.4.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

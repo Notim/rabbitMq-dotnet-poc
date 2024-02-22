@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "IbCT9HEjDAwUTDO/FQhstXBxI1sYGXEG6mzEir0QjWU=",
+  "Source": "CompanyName.Ordering.Checkout.OrderPrepare.Worker",
+  "BasePath": "_content/CompanyName.Ordering.Checkout.OrderPrepare.Worker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

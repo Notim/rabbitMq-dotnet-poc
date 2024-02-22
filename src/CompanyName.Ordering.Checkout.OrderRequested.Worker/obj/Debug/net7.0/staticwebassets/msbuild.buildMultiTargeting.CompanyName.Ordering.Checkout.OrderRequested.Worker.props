@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/CompanyName.Ordering.Checkout.OrderRequested.Worker.props" />
+</Project>

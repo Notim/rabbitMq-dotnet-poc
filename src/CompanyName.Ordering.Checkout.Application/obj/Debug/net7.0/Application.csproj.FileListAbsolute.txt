@@ -1,0 +1,15 @@
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/bin/Debug/net7.0/Application
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/bin/Debug/net7.0/Application.deps.json
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/bin/Debug/net7.0/Application.runtimeconfig.json
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/bin/Debug/net7.0/Application.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/bin/Debug/net7.0/Application.pdb
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/Application.AssemblyInfoInputs.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/Application.AssemblyInfo.cs
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/Application.csproj.CoreCompileInputs.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/Application.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/refint/Application.dll
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/Application.pdb
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/Application.genruntimeconfig.cache
+/home/joaovitorpaulinomartins/Projects/CompanyName.Ordering.Checkout/src/Application/obj/Debug/net7.0/ref/Application.dll
