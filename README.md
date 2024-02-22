@@ -67,37 +67,37 @@ o arquivo que vai conter todas essas informações de quais exchanges, topicos e
 a porta de entrada que o cliente vai solicitar vai ser um serviço WebApi 
 Cada microserviço que vai reagir as mensagens do rabbitMq vai ser criado um worker background service que vai ficar escutando as filas.
 
-![img_1.png](img_1.png)
+![assets/img_1.png](assets/img_1.png)
 
 A aplicação de WebApi vai emitir a mensagem de OrderRequest no exchange e a exchange vai direcionar a mensagem para a fila correta baseado no que foi definido no routingkey
 
 # Testes de funcionamento
 
 colocar todos os microserviços para rodar  
-![img_5.png](img_5.png)
+![assets/img_5.png](assets/img_5.png)
 
 requisição para o webapi  
-![img_3.png](img_3.png)
+![assets/img_3.png](assets/img_3.png)
 
 log da webApi  
-![img_4.png](img_4.png)
+![assets/img_4.png](assets/img_4.png)
 
 log do worker OrderRequested  
-![img_6.png](img_6.png)
+![assets/img_6.png](assets/img_6.png)
 
 log do worker OrderPrepare  
-![img_7.png](img_7.png)
+![assets/img_7.png](assets/img_7.png)
 
 log do worker OrderReady  
-![img_8.png](img_8.png)
+![assets/img_8.png](assets/img_8.png)
 
 log do worker OrderSentToCustomer    
-![img_9.png](img_9.png)
+![assets/img_9.png](assets/img_9.png)
 
 e o microserviço de logs reage a todos os eventos que foram mandados para as rounting keys
 
 logs do worker OrderLogs  
-![img_10.png](img_10.png)
+![assets/img_10.png](assets/img_10.png)
 
 
 # conclusão
